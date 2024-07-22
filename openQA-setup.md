@@ -100,6 +100,10 @@ sudo systemctl enable --now openqa-scheduler
 
 该文档中的测试用例没有运行成功，目前还不知道是什么问题
 
+### 使用 qemu 启动 vnc 连接 oErv
+
+![1721291375684](image/openQA-setup/1721291375684.png)
+
 ## 碰到的问题
 
 **声明，以下问题不具有普适性，仅为个人在部署 openQA 过程中碰到的问题**
