@@ -25,11 +25,11 @@ sub run {
 
     # 添加额外的等待时间，确保桌面完全加载
     diag "Waiting for the desktop to load completely";
-    wait_still_screen stilltime => 300, timeout => 300;  # 设置stilltime和timeout为300秒 (5分钟)
+    wait_still_screen stilltime => 180, timeout => 180;  # 设置stilltime和timeout为300秒 (5分钟)
 
     # 确认进入桌面
     diag "Checking if desktop is shown";
-    assert_screen 'desktop', $timeout;
+    assert_screen 'desktop-toolbar', $timeout;
 
     diag "Login test completed.";
 }
