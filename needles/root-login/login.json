@@ -1,0 +1,23 @@
+{
+  "properties": [],
+  "tags": [
+    "login",
+    "user-menu"
+  ],
+  "area": [
+    {
+      "xpos": 462,
+      "ypos": 320,
+      "width": 207,
+      "height": 48,
+      "type": "match"
+    },
+    {
+      "xpos": 370,
+      "ypos": 317,
+      "width": 77,
+      "height": 91,
+      "type": "match"
+    }
+  ]
+}

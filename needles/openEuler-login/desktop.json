@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "desktop-toolbar"
+  ],
+  "area": [
+    {
+      "xpos": 361,
+      "ypos": 719,
+      "width": 308,
+      "height": 51,
+      "type": "match"
+    }
+  ]
+}

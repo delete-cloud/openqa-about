@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "other-click"
+  ],
+  "area": [
+    {
+      "xpos": 459,
+      "ypos": 357,
+      "width": 205,
+      "height": 40,
+      "type": "match"
+    }
+  ]
+}

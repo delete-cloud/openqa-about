@@ -1,0 +1,31 @@
+{
+  "properties": [],
+  "tags": [
+    "username-input",
+    "password-input",
+    "login-click"
+  ],
+  "area": [
+    {
+      "xpos": 455,
+      "ypos": 345,
+      "width": 213,
+      "height": 46,
+      "type": "match"
+    },
+    {
+      "xpos": 455,
+      "ypos": 388,
+      "width": 215,
+      "height": 43,
+      "type": "match"
+    },
+    {
+      "xpos": 582,
+      "ypos": 431,
+      "width": 88,
+      "height": 46,
+      "type": "match"
+    }
+  ]
+}
