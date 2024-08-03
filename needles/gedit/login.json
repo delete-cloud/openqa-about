@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "username-match"
+  ],
+  "area": [
+    {
+      "xpos": 453,
+      "ypos": 314,
+      "width": 221,
+      "height": 54,
+      "type": "match"
+    }
+  ]
+}

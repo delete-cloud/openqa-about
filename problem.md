@@ -4,7 +4,7 @@
 
 使用 pve fedora lxc 部署 openqa 后，因为宿主机性能有限，为改善测试体验，尝试连接本地局域网内另一台 PC 上的 openqa-worker
 
-参考 [deploy-openQA-for-riscv.md](https://gitee.com/lvxiaoqian/memo/blob/master/deploy-openQA-for-riscv.md) 中 openqa 连接远端 worker 的步骤，需要启用 nfs
+参考 [deploy-openQA-for-riscv.md](https://gitee.com/lvxiaoqian/memo/blob/master/deploy-openQA-for-riscv.md) 中 openqa 连接远端 worker 的步骤，需要启用 n
 
 启用 nfs 时遇到问题，systemd nfs-server.service 对应日志：
 

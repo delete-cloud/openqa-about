@@ -1,0 +1,23 @@
+{
+  "properties": [],
+  "tags": [
+    "file-path-match",
+    "close-button-match"
+  ],
+  "area": [
+    {
+      "xpos": 413,
+      "ypos": 48,
+      "width": 79,
+      "height": 24,
+      "type": "match"
+    },
+    {
+      "xpos": 858,
+      "ypos": 29,
+      "width": 44,
+      "height": 44,
+      "type": "match"
+    }
+  ]
+}

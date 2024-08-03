@@ -1,0 +1,15 @@
+{
+  "properties": [],
+  "tags": [
+    "open-button"
+  ],
+  "area": [
+    {
+      "xpos": 4,
+      "ypos": 30,
+      "width": 142,
+      "height": 46,
+      "type": "match"
+    }
+  ]
+}
