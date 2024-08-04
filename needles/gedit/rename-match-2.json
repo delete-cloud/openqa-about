@@ -1,7 +1,8 @@
 {
   "properties": [],
   "tags": [
-    "rename-match"
+    "rename-match",
+    "desktop-folder-click"
   ],
   "area": [
     {
@@ -9,6 +10,13 @@
       "ypos": 56,
       "width": 88,
       "height": 46,
+      "type": "match"
+    },
+    {
+      "xpos": 164,
+      "ypos": 176,
+      "width": 92,
+      "height": 26,
       "type": "match"
     }
   ]

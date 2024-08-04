@@ -1,7 +1,8 @@
 {
   "properties": [],
   "tags": [
-    "text-input-match"
+    "text-input-match",
+    "save-button-match"
   ],
   "area": [
     {
@@ -9,6 +10,13 @@
       "ypos": 69,
       "width": 114,
       "height": 25,
+      "type": "match"
+    },
+    {
+      "xpos": 658,
+      "ypos": 31,
+      "width": 76,
+      "height": 41,
       "type": "match"
     }
   ]

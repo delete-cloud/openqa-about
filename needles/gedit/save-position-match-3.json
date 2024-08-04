@@ -1,22 +1,22 @@
 {
   "properties": [],
   "tags": [
-    "save-button",
-    "save-position-match"
+    "save-position-match-1",
+    "save-button"
   ],
   "area": [
-    {
-      "xpos": 929,
-      "ypos": 722,
-      "width": 94,
-      "height": 43,
-      "type": "match"
-    },
     {
       "xpos": 153,
       "ypos": 169,
       "width": 194,
       "height": 39,
+      "type": "match"
+    },
+    {
+      "xpos": 929,
+      "ypos": 722,
+      "width": 94,
+      "height": 43,
       "type": "match"
     }
   ]
