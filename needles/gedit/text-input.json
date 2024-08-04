@@ -1,5 +1,15 @@
 {
   "properties": [],
-  "tags": [],
-  "area": []
+  "tags": [
+    "text-input-match"
+  ],
+  "area": [
+    {
+      "xpos": 24,
+      "ypos": 69,
+      "width": 114,
+      "height": 25,
+      "type": "match"
+    }
+  ]
 }
