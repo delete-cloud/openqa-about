@@ -1,0 +1,395 @@
+[2024-08-04T22:14:36.782950+08:00] [info] +++ setup notes +++
+[2024-08-04T22:14:36.807569+08:00] [info] Running on openSUSE:2 (Linux 6.10.2-1-default #1 SMP PREEMPT_DYNAMIC Mon Jul 29 08:51:47 UTC 2024 (65a34e2) x86_64)
+[2024-08-04T22:14:37.061105+08:00] [debug] +++ worker notes +++
+[2024-08-04T22:14:37.691069+08:00] [debug] [pid:4049] Current version is 4.6.1722273351.abb9288 [interface v41]
+[2024-08-04T22:14:37.724312+08:00] [debug] [pid:4049] git hash in 'openeuler': UNKNOWN
+sh: line 1: /usr/bin/git: Permission denied
+[2024-08-04T22:14:37.731535+08:00] [debug] [pid:4049] git url in 'openeuler': UNKNOWN (origin remote not found)
+x11tty:1[2024-08-04T22:14:38.274281+08:00] [debug] [pid:4049] usingenv DESKTOP=xfce
+[2024-08-04T22:14:38.274478+08:00] [debug] [pid:4049] usingenv DISTRI=openeuler
+[2024-08-04T22:14:38.274573+08:00] [debug] [pid:4049] usingenv NOAUTOLOGIN=0
+[2024-08-04T22:14:38.274665+08:00] [debug] [pid:4049] usingenv QEMUCPU=rv64
+[2024-08-04T22:14:38.274755+08:00] [debug] [pid:4049] usingenv QEMUCPUS=4
+[2024-08-04T22:14:38.274849+08:00] [debug] [pid:4049] usingenv INSTLANG=en_US
+[2024-08-04T22:14:38.280200+08:00] [debug] [pid:4049] parse_vars (variables parsed from YAML schedule):
+[2024-08-04T22:14:38.280776+08:00] [debug] [pid:4049] --- {}
+  
+[2024-08-04T22:14:38.281802+08:00] [debug] [pid:4049] ---
+  - gedit_test
+  
+[2024-08-04T22:14:38.281959+08:00] [debug] [pid:4049] parse_test_suite_data (data parsed from YAML test_data):
+[2024-08-04T22:14:38.282122+08:00] [debug] [pid:4049] --- {}
+  
+[2024-08-04T22:14:38.285574+08:00] [debug] [pid:4049] scheduling gedit_test tests/gedit_test.pm
+[2024-08-04T22:14:38.297159+08:00] [info] [pid:4056] cmdsrv: daemon reachable under http://*:20023/0vZEd_VZnPDtgzQ9/
+[2024-08-04T22:14:38.300383+08:00] [info] [pid:4056] Listening at "http://[::]:20023"
+Web application available at http://[::]:20023
+[2024-08-04T22:14:38.301981+08:00] [debug] [pid:4049] git hash in 'openeuler/products/openeuler/needles': UNKNOWN
+[2024-08-04T22:14:38.302287+08:00] [debug] [pid:4049] git url in 'openeuler/products/openeuler/needles': UNKNOWN (no .git found)
+[2024-08-04T22:14:38.302579+08:00] [debug] [pid:4049] init needles from openeuler/products/openeuler/needles
+[2024-08-04T22:14:38.312307+08:00] [debug] [pid:4049] loaded 13 needles
+[2024-08-04T22:14:38.479631+08:00] [debug] [pid:4049] 4049: channel_out 16, channel_in 15
+[2024-08-04T22:14:38.518398+08:00] [debug] [pid:4062] 4062: cmdpipe 14, rsppipe 17
+[2024-08-04T22:14:38.518637+08:00] [debug] [pid:4062] started mgmt loop with pid 4062
+Can't exec "ffmpeg": 没有那个文件或目录 at /usr/lib/os-autoinst/backend/baseclass.pm line 347, <$fh> line 2.
+[2024-08-04T22:14:38.800445+08:00] [debug] [pid:4062] qemu version detected: 9.0.2
+[2024-08-04T22:14:38.801097+08:00] [info] [pid:4062] ::: backend::qemu::start_qemu: UEFI_PFLASH and BIOS are deprecated. It is recommended to use UEFI_PFLASH_CODE and UEFI_PFLASH_VARS instead. These variables can be auto-discovered, try to just remove UEFI_PFLASH.
+[2024-08-04T22:14:38.803957+08:00] [debug] [pid:4062] running `/usr/bin/chattr +C /var/lib/openqa/pool/2/raid`
+[2024-08-04T22:14:38.818701+08:00] [debug] [pid:4062] Command `/usr/bin/chattr +C /var/lib/openqa/pool/2/raid` terminated with 0
+[2024-08-04T22:14:38.818946+08:00] [debug] [pid:4062] Configuring storage controllers and block devices
+[2024-08-04T22:14:38.819953+08:00] [debug] [pid:4062] running `/usr/bin/qemu-img info --output=json /var/lib/openqa/pool/2/openEuler-23.09-V1-xfce-qemu-preview.qcow2`
+[2024-08-04T22:14:39.006320+08:00] [debug] [pid:4062] Initializing block device images
+[2024-08-04T22:14:39.006786+08:00] [debug] [pid:4062] running `/usr/bin/qemu-img create -f qcow2 -F qcow2 -b /var/lib/openqa/pool/2/openEuler-23.09-V1-xfce-qemu-preview.qcow2 /var/lib/openqa/pool/2/raid/hd0-overlay0 21474836480`
+[2024-08-04T22:14:39.203705+08:00] [debug] [pid:4062] Formatting '/var/lib/openqa/pool/2/raid/hd0-overlay0', fmt=qcow2 cluster_size=65536 extended_l2=off compression_type=zlib size=21474836480 backing_file=/var/lib/openqa/pool/2/openEuler-23.09-V1-xfce-qemu-preview.qcow2 backing_fmt=qcow2 lazy_refcounts=off refcount_bits=16
+[2024-08-04T22:14:39.203964+08:00] [debug] [pid:4062] init_blockdev_images: Finished creating block devices
+[2024-08-04T22:14:39.205841+08:00] [debug] [pid:4062] starting: /usr/bin/qemu-system-riscv64 -device VGA,edid=on,xres=1024,yres=768 -only-migratable -chardev ringbuf,id=serial0,logfile=serial0,logappend=on -serial chardev:serial0 -audiodev none,id=snd0 -device intel-hda -device hda-output,audiodev=snd0 -m 4096 -machine virt,usb=off -cpu rv64 -netdev user,id=qanet0 -device virtio-net,netdev=qanet0,mac=52:54:00:12:34:56 -object rng-random,filename=/dev/urandom,id=rng0 -device virtio-rng-pci,rng=rng0 -bios none -kernel /var/lib/openqa/share/factory/other/fw_payload_oe_uboot_2304.bin -append root=/dev/vda1 -device qemu-xhci -device usb-tablet -device usb-kbd -smp 4 -no-shutdown -vnc :92,share=force-shared -device virtio-serial -chardev pipe,id=virtio_console,path=virtio_console,logfile=virtio_console.log,logappend=on -device virtconsole,chardev=virtio_console,name=org.openqa.console.virtio_console -chardev pipe,id=virtio_console_user,path=virtio_console_user,logfile=virtio_console_user.log,logappend=on -device virtconsole,chardev=virtio_console_user,name=org.openqa.console.virtio_console_user -chardev socket,path=qmp_socket,server=on,wait=off,id=qmp_socket,logfile=qmp_socket.log,logappend=on -qmp chardev:qmp_socket -S -blockdev driver=file,node-name=hd0-overlay0-file,filename=/var/lib/openqa/pool/2/raid/hd0-overlay0,cache.no-flush=on -blockdev driver=qcow2,node-name=hd0-overlay0,file=hd0-overlay0-file,cache.no-flush=on,discard=unmap -device virtio-blk-device,id=hd0-device,drive=hd0-overlay0,serial=hd0
+[2024-08-04T22:14:39.211980+08:00] [debug] [pid:4062] Waiting for 0 attempts
+[2024-08-04T22:14:40.213689+08:00] [debug] [pid:4062] Waiting for 1 attempts
+[2024-08-04T22:14:41.214766+08:00] [debug] [pid:4062] Finished after 2 attempts
+[2024-08-04T22:14:41.241599+08:00] [debug] [pid:4062] Establishing VNC connection to localhost:5992
+[2024-08-04T22:14:41.300153+08:00] [debug] [pid:4062] pointer type 1 0 640 480 -257
+[2024-08-04T22:14:41.300406+08:00] [debug] [pid:4062] led state 0 1 1 -261
+[2024-08-04T22:14:41.304222+08:00] [debug] [pid:4062] Start CPU
+[2024-08-04T22:14:41.304739+08:00] [debug] [pid:4062] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"45630","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_CONNECTED","timestamp":{"microseconds":243283,"seconds":1722780881}}
+[2024-08-04T22:14:41.304911+08:00] [debug] [pid:4062] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"45630","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_INITIALIZED","timestamp":{"microseconds":247378,"seconds":1722780881}}
+[2024-08-04T22:14:41.305562+08:00] [debug] [pid:4062] EVENT {"event":"RESUME","timestamp":{"microseconds":305351,"seconds":1722780881}}
+GOT GO
+
+[2024-08-04T22:14:41.311016+08:00] [debug] [pid:4062] QEMU: QEMU emulator version 9.0.2 (openSUSE Tumbleweed)
+[2024-08-04T22:14:41.311137+08:00] [debug] [pid:4062] QEMU: Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers
+[2024-08-04T22:14:41.327491+08:00] [debug] [pid:4059] Snapshots are supported
+[2024-08-04T22:14:41.329017+08:00] [debug] [pid:4059] ||| starting gedit_test tests/gedit_test.pm
+[2024-08-04T22:14:41.331583+08:00] [debug] [pid:4059] Starting gedit test...
+[2024-08-04T22:14:41.331710+08:00] [debug] [pid:4059] Waiting for login screen to appear
+[2024-08-04T22:14:41.331988+08:00] [debug] [pid:4059] tests/gedit_test.pm:15 called testapi::assert_screen
+[2024-08-04T22:14:41.332347+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="username-match", timeout=180)
+[2024-08-04T22:14:42.345616+08:00] [debug] [pid:4062] no match: 359.0s, best candidate: login (0.00)
+[2024-08-04T22:14:43.313665+08:00] [debug] [pid:4062] no change: 358.0s
+[2024-08-04T22:14:43.315183+08:00] [debug] [pid:4062] no match: 358.0s, best candidate: login (0.00)
+[2024-08-04T22:14:44.315386+08:00] [debug] [pid:4062] no change: 357.0s
+[2024-08-04T22:14:44.316820+08:00] [debug] [pid:4062] no match: 357.0s, best candidate: login (0.00)
+[2024-08-04T22:14:45.316821+08:00] [debug] [pid:4062] no change: 356.0s
+[2024-08-04T22:14:45.318413+08:00] [debug] [pid:4062] no match: 356.0s, best candidate: login (0.00)
+[2024-08-04T22:14:46.342764+08:00] [debug] [pid:4062] no match: 355.0s, best candidate: login (0.00)
+[2024-08-04T22:14:47.321569+08:00] [debug] [pid:4062] no change: 354.0s
+[2024-08-04T22:14:47.323008+08:00] [debug] [pid:4062] no match: 354.0s, best candidate: login (0.00)
+[2024-08-04T22:14:48.322853+08:00] [debug] [pid:4062] no change: 353.0s
+[2024-08-04T22:14:48.324259+08:00] [debug] [pid:4062] no match: 353.0s, best candidate: login (0.00)
+[2024-08-04T22:14:49.324691+08:00] [debug] [pid:4062] no change: 352.0s
+[2024-08-04T22:14:49.326101+08:00] [debug] [pid:4062] no match: 352.0s, best candidate: login (0.00)
+[2024-08-04T22:14:50.325751+08:00] [debug] [pid:4062] no change: 351.0s
+[2024-08-04T22:14:50.327393+08:00] [debug] [pid:4062] no match: 351.0s, best candidate: login (0.00)
+[2024-08-04T22:14:51.370582+08:00] [debug] [pid:4062] no match: 350.0s, best candidate: login (0.00)
+[2024-08-04T22:14:52.329867+08:00] [debug] [pid:4062] no change: 349.0s
+[2024-08-04T22:14:52.331380+08:00] [debug] [pid:4062] no match: 349.0s, best candidate: login (0.00)
+[2024-08-04T22:14:53.331462+08:00] [debug] [pid:4062] no change: 348.0s
+[2024-08-04T22:14:53.332931+08:00] [debug] [pid:4062] no match: 348.0s, best candidate: login (0.00)
+[2024-08-04T22:14:54.331914+08:00] [debug] [pid:4062] no change: 347.0s
+[2024-08-04T22:14:54.333568+08:00] [debug] [pid:4062] no match: 347.0s, best candidate: login (0.00)
+[2024-08-04T22:14:55.332251+08:00] [debug] [pid:4062] no change: 346.0s
+[2024-08-04T22:14:55.333813+08:00] [debug] [pid:4062] no match: 346.0s, best candidate: login (0.00)
+[2024-08-04T22:14:56.333586+08:00] [debug] [pid:4062] no change: 344.9s
+[2024-08-04T22:14:56.335171+08:00] [debug] [pid:4062] no match: 344.9s, best candidate: login (0.00)
+[2024-08-04T22:14:57.341362+08:00] [debug] [pid:4062] no change: 343.9s
+[2024-08-04T22:14:57.343073+08:00] [debug] [pid:4062] no match: 343.9s, best candidate: login (0.00)
+[2024-08-04T22:14:58.338478+08:00] [debug] [pid:4062] no change: 342.9s
+[2024-08-04T22:14:58.339943+08:00] [debug] [pid:4062] no match: 342.9s, best candidate: login (0.00)
+[2024-08-04T22:14:59.340261+08:00] [debug] [pid:4062] no change: 341.9s
+[2024-08-04T22:14:59.341878+08:00] [debug] [pid:4062] no match: 341.9s, best candidate: login (0.00)
+[2024-08-04T22:15:00.372664+08:00] [debug] [pid:4062] no match: 340.9s, best candidate: login (0.00)
+[2024-08-04T22:15:01.344822+08:00] [debug] [pid:4062] no change: 339.9s
+[2024-08-04T22:15:01.346274+08:00] [debug] [pid:4062] no match: 339.9s, best candidate: login (0.00)
+[2024-08-04T22:15:02.347480+08:00] [debug] [pid:4062] no change: 338.9s
+[2024-08-04T22:15:02.349006+08:00] [debug] [pid:4062] no match: 338.9s, best candidate: login (0.00)
+[2024-08-04T22:15:03.356963+08:00] [debug] [pid:4062] no match: 337.9s, best candidate: login (0.00)
+[2024-08-04T22:15:04.358446+08:00] [debug] [pid:4062] no match: 336.9s, best candidate: login (0.00)
+[2024-08-04T22:15:05.378667+08:00] [debug] [pid:4062] no match: 335.9s, best candidate: login (0.00)
+[2024-08-04T22:15:06.352237+08:00] [debug] [pid:4062] no change: 334.9s
+[2024-08-04T22:15:06.359833+08:00] [debug] [pid:4062] no match: 334.9s, best candidate: login (0.00)
+[2024-08-04T22:15:07.362739+08:00] [debug] [pid:4062] no match: 333.9s, best candidate: login (0.00)
+[2024-08-04T22:15:08.358074+08:00] [debug] [pid:4062] no change: 332.9s
+[2024-08-04T22:15:08.363266+08:00] [debug] [pid:4062] no match: 332.9s, best candidate: login (0.00)
+[2024-08-04T22:15:09.363755+08:00] [debug] [pid:4062] no match: 331.9s, best candidate: login (0.00)
+[2024-08-04T22:15:10.394669+08:00] [debug] [pid:4062] no match: 330.9s, best candidate: login (0.00)
+[2024-08-04T22:15:11.368708+08:00] [debug] [pid:4062] no match: 329.9s, best candidate: login (0.00)
+[2024-08-04T22:15:12.365166+08:00] [debug] [pid:4062] no change: 328.9s
+[2024-08-04T22:15:12.374439+08:00] [debug] [pid:4062] no match: 328.9s, best candidate: login (0.00)
+[2024-08-04T22:15:13.372026+08:00] [debug] [pid:4062] no match: 327.9s, best candidate: login (0.00)
+[2024-08-04T22:15:14.373951+08:00] [debug] [pid:4062] no match: 326.9s, best candidate: login (0.00)
+[2024-08-04T22:15:15.398472+08:00] [debug] [pid:4062] no match: 325.9s, best candidate: login (0.00)
+[2024-08-04T22:15:16.372918+08:00] [debug] [pid:4062] no match: 324.9s, best candidate: login (0.00)
+[2024-08-04T22:15:17.384668+08:00] [debug] [pid:4062] no match: 323.9s, best candidate: login (0.00)
+[2024-08-04T22:15:18.374129+08:00] [debug] [pid:4062] no match: 322.9s, best candidate: login (0.00)
+[2024-08-04T22:15:19.379355+08:00] [debug] [pid:4062] no match: 321.9s, best candidate: login (0.00)
+[2024-08-04T22:15:20.428323+08:00] [debug] [pid:4062] no match: 320.9s, best candidate: login (0.00)
+[2024-08-04T22:15:21.382706+08:00] [debug] [pid:4062] no match: 319.9s, best candidate: login (0.00)
+[2024-08-04T22:15:22.374554+08:00] [debug] [pid:4062] no change: 318.9s
+[2024-08-04T22:15:22.379234+08:00] [debug] [pid:4062] no match: 318.9s, best candidate: login (0.00)
+[2024-08-04T22:15:23.375076+08:00] [debug] [pid:4062] no change: 317.9s
+[2024-08-04T22:15:23.379547+08:00] [debug] [pid:4062] no match: 317.9s, best candidate: login (0.00)
+[2024-08-04T22:15:24.376895+08:00] [debug] [pid:4062] no change: 316.9s
+[2024-08-04T22:15:24.382063+08:00] [debug] [pid:4062] no match: 316.9s, best candidate: login (0.00)
+[2024-08-04T22:15:25.531195+08:00] [debug] [pid:4062] no match: 315.9s, best candidate: login (0.00)
+[2024-08-04T22:15:26.382239+08:00] [debug] [pid:4062] no change: 314.9s
+[2024-08-04T22:15:26.389525+08:00] [debug] [pid:4062] no match: 314.9s, best candidate: login (0.00)
+[2024-08-04T22:15:27.384496+08:00] [debug] [pid:4062] no change: 313.9s
+[2024-08-04T22:15:27.389896+08:00] [debug] [pid:4062] no match: 313.9s, best candidate: login (0.00)
+[2024-08-04T22:15:28.385308+08:00] [debug] [pid:4062] no change: 312.9s
+[2024-08-04T22:15:28.389756+08:00] [debug] [pid:4062] no match: 312.9s, best candidate: login (0.00)
+[2024-08-04T22:15:29.386769+08:00] [debug] [pid:4062] no change: 311.9s
+[2024-08-04T22:15:29.391373+08:00] [debug] [pid:4062] no match: 311.9s, best candidate: login (0.00)
+[2024-08-04T22:15:30.511065+08:00] [debug] [pid:4062] no match: 310.9s, best candidate: login (0.00)
+[2024-08-04T22:15:31.389755+08:00] [debug] [pid:4062] no change: 309.9s
+[2024-08-04T22:15:31.394526+08:00] [debug] [pid:4062] no match: 309.9s, best candidate: login (0.00)
+[2024-08-04T22:15:32.390466+08:00] [debug] [pid:4062] no change: 308.9s
+[2024-08-04T22:15:32.395047+08:00] [debug] [pid:4062] no match: 308.9s, best candidate: login (0.00)
+[2024-08-04T22:15:33.392408+08:00] [debug] [pid:4062] no change: 307.9s
+[2024-08-04T22:15:33.396550+08:00] [debug] [pid:4062] no match: 307.9s, best candidate: login (0.00)
+[2024-08-04T22:15:34.393809+08:00] [debug] [pid:4062] no change: 306.9s
+[2024-08-04T22:15:34.398473+08:00] [debug] [pid:4062] no match: 306.9s, best candidate: login (0.00)
+[2024-08-04T22:15:35.506423+08:00] [debug] [pid:4062] no match: 305.9s, best candidate: login (0.00)
+[2024-08-04T22:15:36.396402+08:00] [debug] [pid:4062] no change: 304.9s
+[2024-08-04T22:15:36.400734+08:00] [debug] [pid:4062] no match: 304.9s, best candidate: login (0.00)
+[2024-08-04T22:15:37.397494+08:00] [debug] [pid:4062] no change: 303.9s
+[2024-08-04T22:15:37.402143+08:00] [debug] [pid:4062] no match: 303.9s, best candidate: login (0.00)
+[2024-08-04T22:15:38.401312+08:00] [debug] [pid:4062] no match: 302.9s, best candidate: login (0.00)
+[2024-08-04T22:15:39.399589+08:00] [debug] [pid:4062] no change: 301.9s
+[2024-08-04T22:15:39.401325+08:00] [debug] [pid:4062] no match: 301.9s, best candidate: login (0.00)
+[2024-08-04T22:15:40.513671+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found login, similarity 1.00 @ 450/315
+[2024-08-04T22:15:40.514495+08:00] [debug] [pid:4059] Entering password
+[2024-08-04T22:15:40.515030+08:00] [debug] [pid:4059] tests/gedit_test.pm:19 called testapi::type_string
+[2024-08-04T22:15:40.515472+08:00] [debug] [pid:4059] <<< testapi::type_string(string="openEuler12#\$", max_interval=250, wait_screen_change=0, wait_still_screen=0, timeout=180, similarity_level=47)
+[2024-08-04T22:15:41.028826+08:00] [debug] [pid:4059] tests/gedit_test.pm:20 called testapi::assert_screen
+[2024-08-04T22:15:41.029061+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="password-input", timeout=180)
+[2024-08-04T22:15:41.414049+08:00] [debug] [pid:4062] no match: 359.6s, best candidate: password-input (0.00)
+[2024-08-04T22:15:42.481807+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found password-input, similarity 1.00 @ 448/361
+[2024-08-04T22:15:42.482479+08:00] [debug] [pid:4059] Sending Enter key to login
+[2024-08-04T22:15:42.482633+08:00] [debug] [pid:4059] tests/gedit_test.pm:24 called testapi::send_key
+[2024-08-04T22:15:42.482768+08:00] [debug] [pid:4059] <<< testapi::send_key(key="ret", timeout=180, wait_screen_change=0)
+[2024-08-04T22:15:42.755090+08:00] [debug] [pid:4059] Waiting for the desktop to load completely
+[2024-08-04T22:15:42.755706+08:00] [debug] [pid:4059] tests/gedit_test.pm:28 called testapi::wait_still_screen
+[2024-08-04T22:15:42.755860+08:00] [debug] [pid:4059] <<< testapi::wait_still_screen(stilltime=60, timeout=60, similarity_level=47)
+[2024-08-04T22:17:01.627479+08:00] [debug] [pid:4062] considering VNC stalled, no update for 4.01 seconds
+[2024-08-04T22:17:01.912147+08:00] [debug] [pid:4062] pointer type 1 0 1024 768 -257
+[2024-08-04T22:17:01.912567+08:00] [debug] [pid:4062] led state 0 1 1 -261
+[2024-08-04T22:17:14.724238+08:00] [debug] [pid:4059] >>> testapi::wait_still_screen: detected same image for 60 seconds (91.9547328948975 s elapsed), last detected similarity is 50.4465265245599
+[2024-08-04T22:17:14.733735+08:00] [debug] [pid:4059] Checking if gedit icon is shown
+[2024-08-04T22:17:14.735149+08:00] [debug] [pid:4059] tests/gedit_test.pm:32 called testapi::assert_and_click
+[2024-08-04T22:17:14.736238+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="gedit-icon", timeout=180)
+[2024-08-04T22:17:14.870299+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found gedit-desktop, similarity 1.00 @ 30/396
+[2024-08-04T22:17:14.870491+08:00] [debug] [pid:4059] tests/gedit_test.pm:32 called testapi::assert_and_click
+[2024-08-04T22:17:14.870641+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="gedit-icon", timeout=180)
+[2024-08-04T22:17:14.876550+08:00] [debug] [pid:4059] clicking at 73/444
+[2024-08-04T22:17:14.877108+08:00] [debug] [pid:4059] tests/gedit_test.pm:32 called testapi::assert_and_click
+[2024-08-04T22:17:14.877476+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=73, y=444)
+[2024-08-04T22:17:14.880047+08:00] [debug] [pid:4062] mouse_move 73, 444
+[2024-08-04T22:17:14.881334+08:00] [debug] [pid:4062] send_pointer_event 0, 73, 444, 1
+[2024-08-04T22:17:14.882379+08:00] [debug] [pid:4059] tests/gedit_test.pm:32 called testapi::assert_and_click
+[2024-08-04T22:17:14.882557+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:14.885474+08:00] [debug] [pid:4062] pointer_event 1 73, 444
+[2024-08-04T22:17:14.885795+08:00] [debug] [pid:4062] send_pointer_event 1, 73, 444, 1
+[2024-08-04T22:17:15.039699+08:00] [debug] [pid:4062] pointer_event 0 73, 444
+[2024-08-04T22:17:15.039859+08:00] [debug] [pid:4062] send_pointer_event 0, 73, 444, 1
+[2024-08-04T22:17:16.043915+08:00] [debug] [pid:4059] tests/gedit_test.pm:32 called testapi::assert_and_click
+[2024-08-04T22:17:16.044262+08:00] [debug] [pid:4059] <<< testapi::mouse_hide(border_offset=0)
+[2024-08-04T22:17:16.046105+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:16.046240+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:16.047355+08:00] [debug] [pid:4059] Send Enter key to open gedit
+[2024-08-04T22:17:16.047531+08:00] [debug] [pid:4059] tests/gedit_test.pm:36 called testapi::send_key
+[2024-08-04T22:17:16.048102+08:00] [debug] [pid:4059] <<< testapi::send_key(key="ret", wait_screen_change=0, timeout=180)
+[2024-08-04T22:17:16.319462+08:00] [debug] [pid:4059] Checking if gedit is opened
+[2024-08-04T22:17:16.319681+08:00] [debug] [pid:4059] tests/gedit_test.pm:40 called testapi::assert_screen
+[2024-08-04T22:17:16.319864+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="open-button", timeout=180)
+[2024-08-04T22:17:16.335023+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:17.327071+08:00] [debug] [pid:4062] no match: 358.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:18.324625+08:00] [debug] [pid:4062] no change: 357.9s
+[2024-08-04T22:17:18.325989+08:00] [debug] [pid:4062] no match: 357.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:19.326062+08:00] [debug] [pid:4062] no change: 356.9s
+[2024-08-04T22:17:19.326947+08:00] [debug] [pid:4062] no match: 356.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:20.372208+08:00] [debug] [pid:4062] no match: 355.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:21.329533+08:00] [debug] [pid:4062] no match: 354.9s, best candidate: gedit-open (0.00)
+[2024-08-04T22:17:22.390540+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found gedit-open, similarity 1.00 @ 3/29
+[2024-08-04T22:17:22.390671+08:00] [debug] [pid:4059] Typing text
+[2024-08-04T22:17:22.390809+08:00] [debug] [pid:4059] tests/gedit_test.pm:44 called testapi::type_string
+[2024-08-04T22:17:22.391415+08:00] [debug] [pid:4059] <<< testapi::type_string(string="Hello openEuler", max_interval=250, wait_screen_change=0, wait_still_screen=0, timeout=180, similarity_level=47)
+[2024-08-04T22:17:22.965752+08:00] [debug] [pid:4059] Checking if text is matched
+[2024-08-04T22:17:22.965935+08:00] [debug] [pid:4059] tests/gedit_test.pm:48 called testapi::assert_screen
+[2024-08-04T22:17:22.966072+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="text-input-match", timeout=180)
+[2024-08-04T22:17:23.350726+08:00] [debug] [pid:4062] no match: 359.6s, best candidate: text-input (0.29)
+[2024-08-04T22:17:24.334888+08:00] [debug] [pid:4062] no match: 358.6s, best candidate: text-input (0.87)
+[2024-08-04T22:17:25.336391+08:00] [debug] [pid:4062] no match: 357.6s, best candidate: text-input (0.87)
+[2024-08-04T22:17:26.336268+08:00] [debug] [pid:4062] no change: 356.6s
+[2024-08-04T22:17:26.338055+08:00] [debug] [pid:4062] no match: 356.6s, best candidate: text-input (0.87)
+[2024-08-04T22:17:27.432901+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found text-input, similarity 1.00 @ 656/32
+[2024-08-04T22:17:27.433032+08:00] [debug] [pid:4059] Trying to save file to desktop
+[2024-08-04T22:17:27.433159+08:00] [debug] [pid:4059] tests/gedit_test.pm:52 called testapi::assert_and_click
+[2024-08-04T22:17:27.433304+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="save-button-match", timeout=180)
+[2024-08-04T22:17:28.342075+08:00] [debug] [pid:4062] no match: 359.0s, best candidate: text-input (0.87)
+[2024-08-04T22:17:29.341449+08:00] [debug] [pid:4062] no change: 358.0s
+[2024-08-04T22:17:29.343323+08:00] [debug] [pid:4062] no match: 358.0s, best candidate: text-input (0.87)
+[2024-08-04T22:17:30.345156+08:00] [debug] [pid:4062] no match: 357.0s, best candidate: text-input (0.87)
+[2024-08-04T22:17:31.346578+08:00] [debug] [pid:4062] no match: 356.0s, best candidate: text-input (0.87)
+[2024-08-04T22:17:32.466405+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found text-input, similarity 1.00 @ 656/32
+[2024-08-04T22:17:32.466564+08:00] [debug] [pid:4059] tests/gedit_test.pm:52 called testapi::assert_and_click
+[2024-08-04T22:17:32.466911+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="save-button-match", timeout=180)
+[2024-08-04T22:17:32.469014+08:00] [debug] [pid:4059] clicking at 694/52
+[2024-08-04T22:17:32.469129+08:00] [debug] [pid:4059] tests/gedit_test.pm:52 called testapi::assert_and_click
+[2024-08-04T22:17:32.469895+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=694, y=52)
+[2024-08-04T22:17:32.470539+08:00] [debug] [pid:4062] mouse_move 694, 52
+[2024-08-04T22:17:32.470656+08:00] [debug] [pid:4062] send_pointer_event 0, 694, 52, 1
+[2024-08-04T22:17:32.471184+08:00] [debug] [pid:4059] tests/gedit_test.pm:52 called testapi::assert_and_click
+[2024-08-04T22:17:32.471307+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:32.471884+08:00] [debug] [pid:4062] pointer_event 1 694, 52
+[2024-08-04T22:17:32.471990+08:00] [debug] [pid:4062] send_pointer_event 1, 694, 52, 1
+[2024-08-04T22:17:32.624245+08:00] [debug] [pid:4062] pointer_event 0 694, 52
+[2024-08-04T22:17:32.624525+08:00] [debug] [pid:4062] send_pointer_event 0, 694, 52, 1
+[2024-08-04T22:17:33.626856+08:00] [debug] [pid:4059] tests/gedit_test.pm:52 called testapi::assert_and_click
+[2024-08-04T22:17:33.627065+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=1023, y=767)
+[2024-08-04T22:17:33.627952+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:33.628080+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:33.628613+08:00] [debug] [pid:4059] tests/gedit_test.pm:55 called testapi::assert_screen
+[2024-08-04T22:17:33.629112+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="name-input", timeout=180)
+[2024-08-04T22:17:33.643765+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: save-menu-1 (0.00)
+[2024-08-04T22:17:34.635001+08:00] [debug] [pid:4062] no match: 358.9s, best candidate: save-menu-1 (0.00)
+[2024-08-04T22:17:35.689746+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found save-menu-1, similarity 1.00 @ 58/54
+[2024-08-04T22:17:35.690985+08:00] [debug] [pid:4059] tests/gedit_test.pm:56 called testapi::type_string
+[2024-08-04T22:17:35.691534+08:00] [debug] [pid:4059] <<< testapi::type_string(string="hello", max_interval=250, wait_screen_change=0, wait_still_screen=0, timeout=180, similarity_level=47)
+[2024-08-04T22:17:35.874007+08:00] [debug] [pid:4059] tests/gedit_test.pm:59 called testapi::assert_screen
+[2024-08-04T22:17:35.874242+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="rename-match", timeout=180)
+[2024-08-04T22:17:36.710376+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found rename-match-2, similarity 1.00 @ 162/176
+[2024-08-04T22:17:36.711063+08:00] [debug] [pid:4059] tests/gedit_test.pm:62 called testapi::assert_and_click
+[2024-08-04T22:17:36.711268+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="desktop-folder-click", timeout=180)
+[2024-08-04T22:17:37.640451+08:00] [debug] [pid:4062] no match: 359.0s, best candidate: rename-match-2 (0.89)
+[2024-08-04T22:17:38.641002+08:00] [debug] [pid:4062] no match: 358.0s, best candidate: rename-match-2 (0.89)
+[2024-08-04T22:17:39.696770+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found rename-match-2, similarity 1.00 @ 162/176
+[2024-08-04T22:17:39.696973+08:00] [debug] [pid:4059] tests/gedit_test.pm:62 called testapi::assert_and_click
+[2024-08-04T22:17:39.697099+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="desktop-folder-click", timeout=180)
+[2024-08-04T22:17:39.698717+08:00] [debug] [pid:4059] clicking at 208/189
+[2024-08-04T22:17:39.698837+08:00] [debug] [pid:4059] tests/gedit_test.pm:62 called testapi::assert_and_click
+[2024-08-04T22:17:39.699575+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=208, y=189)
+[2024-08-04T22:17:39.700293+08:00] [debug] [pid:4062] mouse_move 208, 189
+[2024-08-04T22:17:39.700433+08:00] [debug] [pid:4062] send_pointer_event 0, 208, 189, 1
+[2024-08-04T22:17:39.701013+08:00] [debug] [pid:4059] tests/gedit_test.pm:62 called testapi::assert_and_click
+[2024-08-04T22:17:39.701590+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:39.702240+08:00] [debug] [pid:4062] pointer_event 1 208, 189
+[2024-08-04T22:17:39.702352+08:00] [debug] [pid:4062] send_pointer_event 1, 208, 189, 1
+[2024-08-04T22:17:39.854093+08:00] [debug] [pid:4062] pointer_event 0 208, 189
+[2024-08-04T22:17:39.854258+08:00] [debug] [pid:4062] send_pointer_event 0, 208, 189, 1
+[2024-08-04T22:17:40.855335+08:00] [debug] [pid:4059] tests/gedit_test.pm:62 called testapi::assert_and_click
+[2024-08-04T22:17:40.855536+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=1023, y=767)
+[2024-08-04T22:17:40.856354+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:40.856472+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:40.857011+08:00] [debug] [pid:4059] tests/gedit_test.pm:65 called testapi::assert_screen
+[2024-08-04T22:17:40.857148+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="save-position-match-1", timeout=180)
+[2024-08-04T22:17:40.871094+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: save-position-match-3 (0.80)
+[2024-08-04T22:17:41.923473+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found save-position-match-3, similarity 1.00 @ 928/722
+[2024-08-04T22:17:41.923664+08:00] [debug] [pid:4059] tests/gedit_test.pm:68 called testapi::assert_and_click
+[2024-08-04T22:17:41.924280+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="save-button", timeout=180)
+[2024-08-04T22:17:42.913372+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found save-position-match-3, similarity 1.00 @ 928/722
+[2024-08-04T22:17:42.913540+08:00] [debug] [pid:4059] tests/gedit_test.pm:68 called testapi::assert_and_click
+[2024-08-04T22:17:42.914111+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="save-button", timeout=180)
+[2024-08-04T22:17:42.916109+08:00] [debug] [pid:4059] clicking at 975/743
+[2024-08-04T22:17:42.916264+08:00] [debug] [pid:4059] tests/gedit_test.pm:68 called testapi::assert_and_click
+[2024-08-04T22:17:42.917012+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=975, y=743)
+[2024-08-04T22:17:42.917788+08:00] [debug] [pid:4062] mouse_move 975, 743
+[2024-08-04T22:17:42.917926+08:00] [debug] [pid:4062] send_pointer_event 0, 975, 743, 1
+[2024-08-04T22:17:42.918502+08:00] [debug] [pid:4059] tests/gedit_test.pm:68 called testapi::assert_and_click
+[2024-08-04T22:17:42.918718+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:42.919423+08:00] [debug] [pid:4062] pointer_event 1 975, 743
+[2024-08-04T22:17:42.919534+08:00] [debug] [pid:4062] send_pointer_event 1, 975, 743, 1
+[2024-08-04T22:17:43.071896+08:00] [debug] [pid:4062] pointer_event 0 975, 743
+[2024-08-04T22:17:43.072040+08:00] [debug] [pid:4062] send_pointer_event 0, 975, 743, 1
+[2024-08-04T22:17:44.073283+08:00] [debug] [pid:4059] tests/gedit_test.pm:68 called testapi::assert_and_click
+[2024-08-04T22:17:44.073546+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=1023, y=767)
+[2024-08-04T22:17:44.074513+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:44.074654+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:44.075136+08:00] [debug] [pid:4059] tests/gedit_test.pm:71 called testapi::assert_screen
+[2024-08-04T22:17:44.075677+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="save-position-match-2", timeout=180)
+[2024-08-04T22:17:44.088968+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: save-position-confirm-4 (0.29)
+[2024-08-04T22:17:45.138887+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found save-position-confirm-4, similarity 1.00 @ 930/724
+[2024-08-04T22:17:45.139057+08:00] [debug] [pid:4059] tests/gedit_test.pm:74 called testapi::assert_and_click
+[2024-08-04T22:17:45.139182+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="save-button-click", timeout=180)
+[2024-08-04T22:17:46.137605+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found save-position-confirm-4, similarity 1.00 @ 930/724
+[2024-08-04T22:17:46.137878+08:00] [debug] [pid:4059] tests/gedit_test.pm:74 called testapi::assert_and_click
+[2024-08-04T22:17:46.138601+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="save-button-click", timeout=180)
+[2024-08-04T22:17:46.140620+08:00] [debug] [pid:4059] clicking at 975/744
+[2024-08-04T22:17:46.140853+08:00] [debug] [pid:4059] tests/gedit_test.pm:74 called testapi::assert_and_click
+[2024-08-04T22:17:46.141475+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=975, y=744)
+[2024-08-04T22:17:46.142257+08:00] [debug] [pid:4062] mouse_move 975, 744
+[2024-08-04T22:17:46.142375+08:00] [debug] [pid:4062] send_pointer_event 0, 975, 744, 1
+[2024-08-04T22:17:46.142982+08:00] [debug] [pid:4059] tests/gedit_test.pm:74 called testapi::assert_and_click
+[2024-08-04T22:17:46.143142+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:46.143700+08:00] [debug] [pid:4062] pointer_event 1 975, 744
+[2024-08-04T22:17:46.143812+08:00] [debug] [pid:4062] send_pointer_event 1, 975, 744, 1
+[2024-08-04T22:17:46.295674+08:00] [debug] [pid:4062] pointer_event 0 975, 744
+[2024-08-04T22:17:46.295828+08:00] [debug] [pid:4062] send_pointer_event 0, 975, 744, 1
+[2024-08-04T22:17:47.297950+08:00] [debug] [pid:4059] tests/gedit_test.pm:74 called testapi::assert_and_click
+[2024-08-04T22:17:47.298238+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=1023, y=767)
+[2024-08-04T22:17:47.299224+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:47.299354+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:47.299863+08:00] [debug] [pid:4059] Saving success
+[2024-08-04T22:17:47.299987+08:00] [debug] [pid:4059] Trying to match file path
+[2024-08-04T22:17:47.300138+08:00] [debug] [pid:4059] tests/gedit_test.pm:79 called testapi::assert_screen
+[2024-08-04T22:17:47.300872+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="file-path-match", timeout=180)
+[2024-08-04T22:17:47.324779+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: file-path-match (0.00)
+[2024-08-04T22:17:48.362866+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found file-path-match, similarity 1.00 @ 857/28
+[2024-08-04T22:17:48.363026+08:00] [debug] [pid:4059] Closing the text file
+[2024-08-04T22:17:48.363155+08:00] [debug] [pid:4059] tests/gedit_test.pm:82 called testapi::assert_and_click
+[2024-08-04T22:17:48.363695+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="close-button-match", timeout=180)
+[2024-08-04T22:17:49.362768+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found file-path-match, similarity 1.00 @ 857/28
+[2024-08-04T22:17:49.362924+08:00] [debug] [pid:4059] tests/gedit_test.pm:82 called testapi::assert_and_click
+[2024-08-04T22:17:49.363536+08:00] [debug] [pid:4059] <<< testapi::assert_and_click(mustmatch="close-button-match", timeout=180)
+[2024-08-04T22:17:49.365557+08:00] [debug] [pid:4059] clicking at 879/50
+[2024-08-04T22:17:49.365685+08:00] [debug] [pid:4059] tests/gedit_test.pm:82 called testapi::assert_and_click
+[2024-08-04T22:17:49.365780+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=879, y=50)
+[2024-08-04T22:17:49.366429+08:00] [debug] [pid:4062] mouse_move 879, 50
+[2024-08-04T22:17:49.366586+08:00] [debug] [pid:4062] send_pointer_event 0, 879, 50, 1
+[2024-08-04T22:17:49.367170+08:00] [debug] [pid:4059] tests/gedit_test.pm:82 called testapi::assert_and_click
+[2024-08-04T22:17:49.367583+08:00] [debug] [pid:4059] <<< testapi::mouse_click(button="left", cursor_down="0.15")
+[2024-08-04T22:17:49.368285+08:00] [debug] [pid:4062] pointer_event 1 879, 50
+[2024-08-04T22:17:49.368395+08:00] [debug] [pid:4062] send_pointer_event 1, 879, 50, 1
+[2024-08-04T22:17:49.520977+08:00] [debug] [pid:4062] pointer_event 0 879, 50
+[2024-08-04T22:17:49.521116+08:00] [debug] [pid:4062] send_pointer_event 0, 879, 50, 1
+[2024-08-04T22:17:50.522268+08:00] [debug] [pid:4059] tests/gedit_test.pm:82 called testapi::assert_and_click
+[2024-08-04T22:17:50.522839+08:00] [debug] [pid:4059] <<< testapi::mouse_set(x=1023, y=767)
+[2024-08-04T22:17:50.524009+08:00] [debug] [pid:4062] mouse_move 1023, 767
+[2024-08-04T22:17:50.524159+08:00] [debug] [pid:4062] send_pointer_event 0, 1023, 767, 1
+[2024-08-04T22:17:50.524996+08:00] [debug] [pid:4059] Trying to match file in desktop
+[2024-08-04T22:17:50.525171+08:00] [debug] [pid:4059] tests/gedit_test.pm:85 called testapi::assert_screen
+[2024-08-04T22:17:50.525667+08:00] [debug] [pid:4059] <<< testapi::assert_screen(mustmatch="hello-file-match", timeout=180)
+[2024-08-04T22:17:50.575097+08:00] [debug] [pid:4062] no match: 359.9s, best candidate: hello-desktop (0.00)
+[2024-08-04T22:17:51.593307+08:00] [debug] [pid:4059] >>> testapi::_handle_found_needle: found hello-desktop, similarity 1.00 @ 37/514
+[2024-08-04T22:17:51.593478+08:00] [debug] [pid:4059] Gedit test completed.
+[2024-08-04T22:17:51.658508+08:00] [debug] [pid:4059] ||| finished gedit_test tests (runtime: 190 s)
+[2024-08-04T22:17:51.717591+08:00] [debug] [pid:4049] [autotest] process exited: 0
+[2024-08-04T22:17:51.721293+08:00] [debug] [pid:4049] stopping autotest process 4059
+[2024-08-04T22:17:51.722240+08:00] [debug] [pid:4049] done with autotest process
+[2024-08-04T22:17:51.727138+08:00] [debug] [pid:4049] stopping command server 4056 because test execution ended
+[2024-08-04T22:17:51.728094+08:00] [debug] [pid:4049] isotovideo: informing websocket clients before stopping command server: http://127.0.0.1:20023/0vZEd_VZnPDtgzQ9/broadcast
+[2024-08-04T22:17:52.053926+08:00] [debug] [pid:4049] commands process exited: 0
+[2024-08-04T22:17:52.156001+08:00] [debug] [pid:4049] done with command server
+[2024-08-04T22:17:52.157153+08:00] [debug] [pid:4049] isotovideo done
+[2024-08-04T22:17:52.164209+08:00] [debug] [pid:4062] EVENT {"data":{"path":"\/machine\/peripheral-anon\/device[3]\/virtio-backend"},"event":"NIC_RX_FILTER_CHANGED","timestamp":{"microseconds":551328,"seconds":1722780919}}
+[2024-08-04T22:17:52.166307+08:00] [debug] [pid:4062] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"45630","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_DISCONNECTED","timestamp":{"microseconds":642670,"seconds":1722781021}}
+[2024-08-04T22:17:52.166637+08:00] [debug] [pid:4062] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"47122","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_CONNECTED","timestamp":{"microseconds":654065,"seconds":1722781021}}
+[2024-08-04T22:17:52.166772+08:00] [debug] [pid:4062] EVENT {"data":{"client":{"family":"ipv4","host":"127.0.0.1","service":"47122","websocket":false},"server":{"auth":"none","family":"ipv4","host":"0.0.0.0","service":"5992","websocket":false}},"event":"VNC_INITIALIZED","timestamp":{"microseconds":658839,"seconds":1722781021}}
+[2024-08-04T22:17:52.167657+08:00] [debug] [pid:4062] QEMU status is not 'shutdown', it is 'running'
+[2024-08-04T22:17:52.169982+08:00] [debug] [pid:4049] backend shutdown state: 0
+[2024-08-04T22:17:52.186545+08:00] [info] [pid:4062] ::: OpenQA::Qemu::Proc::save_state: Saving QEMU state to qemu_state.json
+[2024-08-04T22:17:53.407355+08:00] [debug] [pid:4062] Passing remaining frames to the video encoder
+[2024-08-04T22:17:53.482036+08:00] [debug] [pid:4062] Waiting for video encoder to finalize the video
+[2024-08-04T22:17:53.482472+08:00] [debug] [pid:4062] The built-in video encoder (pid 4066) terminated
+[2024-08-04T22:17:53.497856+08:00] [debug] [pid:4062] QEMU: qemu-system-riscv64: terminating on signal 15 from pid 4062 (/usr/bin/isotovideo: backend)
+[2024-08-04T22:17:53.504559+08:00] [debug] [pid:4062] sending magic and exit
+[2024-08-04T22:17:53.506067+08:00] [debug] [pid:4049] received magic close
+[2024-08-04T22:17:53.520700+08:00] [debug] [pid:4049] backend process exited: 0
+Use of uninitialized value $name in pattern match (m//) at /usr/lib/os-autoinst/OpenQA/Isotovideo/Utils.pm line 332.
+[2024-08-04T22:17:53.637829+08:00] [debug] [pid:4049] stopping backend process 4062
+[2024-08-04T22:17:53.638206+08:00] [debug] [pid:4049] done with backend process
+4049: EXIT 0
+[2024-08-04T22:17:54.951387+08:00] [info] Isotovideo exit status: 0
+[2024-08-04T22:17:54.989718+08:00] [info] +++ worker notes +++
+[2024-08-04T22:17:54.990576+08:00] [info] End time: 2024-08-04 14:17:54
+[2024-08-04T22:17:54.991164+08:00] [info] Result: done
+[2024-08-04T22:17:55.042189+08:00] [info] Uploading video.ogv
+[2024-08-04T22:17:55.085614+08:00] [info] Uploading autoinst-log.txt
